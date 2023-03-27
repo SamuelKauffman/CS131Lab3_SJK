@@ -1,4 +1,10 @@
 
+/**
+ * @author Sam Kauffman
+ * @Version 1.0
+ * 
+ * Tests Arraylist with different generics
+ */
 public class ListApp {
 
 	public static void main(String[] args) {

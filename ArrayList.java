@@ -1,4 +1,12 @@
 
+/**
+ * @author sam Kauffman
+ * @Version 1.0
+ * 
+ * 
+ *
+ * @param <T>
+ */
 public class ArrayList<T> {
 
 	private final int DEFAULT_SIZE = 10;
@@ -25,6 +33,10 @@ public class ArrayList<T> {
 
 	}// end preferred constructor
 
+	/**
+	 * @param item
+	 * @return if the item was successfully added into the arraylist
+	 */
 	public boolean addItem(T item) {
 		if (currentItem < arList.length) {
 			if (arList[currentItem] != null) {
@@ -36,8 +48,11 @@ public class ArrayList<T> {
 			return false;
 		}
 
-	}
+	}//end addItem
 
+	/**
+	 * Makes the list into a String
+	 */
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < arList.length; i++) {
@@ -45,5 +60,5 @@ public class ArrayList<T> {
 		}
 		return sb.toString();
 
-	}
+	}//end toString
 }// end class
